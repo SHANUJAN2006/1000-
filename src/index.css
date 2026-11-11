@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Cinzel', serif;
+    --font-tamil: 'Noto Sans Tamil', 'Outfit', sans-serif;
+    --font-sinhala: 'Noto Sans Sinhala', 'Outfit', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #080914;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom fonts helper classes */
+.font-tamil {
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+.font-sinhala {
+  font-family: 'Noto Sans Sinhala', sans-serif;
+}
+
+.font-serif-royal {
+  font-family: 'Cinzel', serif;
+}
+
+/* Glassmorphism utility presets */
+.glass-panel {
+  background: rgba(19, 21, 46, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.glass-panel-emerald {
+  background: rgba(6, 78, 59, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.glass-panel-indigo {
+  background: rgba(30, 27, 75, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(99, 102, 241, 0.22);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(26, 29, 64, 0.72) 0%, rgba(15, 17, 38, 0.88) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 12px 36px -8px rgba(212, 175, 55, 0.15), 0 0 20px 0 rgba(16, 185, 129, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Emerald Gradient Text */
+.text-emerald-gradient {
+  background: linear-gradient(135deg, #a7f3d0 0%, #34d399 50%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080914;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232752;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Sound wave animation */
+@keyframes soundwave {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+.animate-wave-1 { animation: soundwave 0.8s ease-in-out infinite; }
+.animate-wave-2 { animation: soundwave 1.1s ease-in-out infinite 0.2s; }
+.animate-wave-3 { animation: soundwave 0.7s ease-in-out infinite 0.4s; }
+.animate-wave-4 { animation: soundwave 1.3s ease-in-out infinite 0.1s; }

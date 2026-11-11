@@ -1,0 +1,6 @@
+{
+  "name": "1000 Proverbs - Trilingual Wisdom Portal",
+  "description": "Explore 1000 authentic, unique cultural proverbs across Tamil, English, and Sinhala with real text-to-speech audio, cultural contexts, search, and favorites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
